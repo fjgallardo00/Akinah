@@ -1,7 +1,9 @@
-### Configuración perfil GitHub
+# Configuración del proyecto Akinah
 
-https://github.com/fjgallardo00/Akinah/blob/Objetivo-0/Objetivos/Objetivo-0/images/perfil.png
+## Configuración del perfil
 
-### Configuración SSH Keys
+![Configuración del perfil](images/perfil.png)
 
-https://github.com/fjgallardo00/Akinah/blob/Objetivo-0/Objetivos/Objetivo-0/images/SSH%20keys.png
+## Configuración SSH Keys
+
+![Configuración SSH Keys](images/SSH%20keys.png)
