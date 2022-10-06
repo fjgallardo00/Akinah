@@ -17,4 +17,5 @@ Lectores que hayan leído una cantidad de libros importante a veces no sabrá lo
 
 ### Documentación
 
-- [Enlace a la carpeta](https://github.com/fjgallardo00/Akinah/tree/Objetivo-0/Objetivos)
+- [Enlace a la carpeta](https://github.com/fjgallardo00/Akinah/tree/Objetivo-1/docs)
+
