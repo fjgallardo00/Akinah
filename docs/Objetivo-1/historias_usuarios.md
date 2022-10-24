@@ -1,3 +1,3 @@
 # Historias de usuario
 
-- [HU1] Quiero que se me recomiendo un libro que me guste, indicando uno o varios géneros, o bien añadiendo libros a una lista de leídos y que recomiende libros similares de forma automática.
+- [HU1] Quiero que se me recomiende un libro que me guste, indicando otro segundo libro para que me encuentre un libro lo más similar posible.

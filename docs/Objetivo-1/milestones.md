@@ -1,9 +1,7 @@
 # Milestones
 
-- [M0] Diseño de una serie de ficheros que contenga una representación de libros y sus géneros. Esta representación debe ser o contener una estructura de datos o varias que permita representar dichos libros y sus géneros asociados y puedan relacionarse entre ellos. Los libros deben tener los suficientes valores o campos para ser representados correctamente y se puedan relacionar de la mejor forma posible.
+- [M0] Diseño de un módulo que defina la estructura de datos donde vayamos a almacenar libros y géneros. 
 
-- [M1] Diseño del algoritmo de recomendación de libros (Algoritmo de similitud de Pearson). También, diseño del algoritmo que muestre una lista de libros ordenados por un criterio indicado.
+- [M1] Diseño de una serie de ficheros que implemente la lógica de negocio y que use el Algoritmo de similitud de Pearson para encontrar libros lo más similar posible al libro proporcionado, según el coeficiente de similitud.
 
-- [M2] Diseño de una serie de ficheros que contenga una representación de los usuarios del sistema. Esta representación debe ser o contener una estructura de datos que permita que los usuarios indiquen un nombre y los géneros que le interesen, de tal manera que se pueda asociar libros con personas.
-
-- [M3] Diseño de un almacenamiento donde guardar dichos libros, géneros y usuarios anteriormente indicados. Este almacenamiento debe ser una base de datos para tener la capacidad de relacionar libros con personas.
+- [M2] Implementación de una API que nos permita obtener datos del libro más similar al libro proporcionado.
