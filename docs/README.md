@@ -1,4 +1,5 @@
 # Enlaces a la documentación
 
-- [Objetivo 0](https://github.com/fjgallardo00/Akinah/tree/Objetivo-1/docs/Objetivo-0)
-- [Objetivo 1](https://github.com/fjgallardo00/Akinah/tree/Objetivo-1/docs/Objetivo-1)
+- [Documentación del objetivo 0](https://github.com/fjgallardo00/Akinah/tree/Objetivo-1/docs/Objetivo-0)
+- [Historias de usuario](https://github.com/fjgallardo00/Akinah/tree/Objetivo-1/docs/historias_usuarios.md)
+- [Milestones](https://github.com/fjgallardo00/Akinah/tree/Objetivo-1/docs/milestones.md)
