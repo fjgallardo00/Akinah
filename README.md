@@ -15,6 +15,11 @@ Se trata de usar un algoritmo de recomendación en el que a cada persona se le r
 
 Lectores que hayan leído una cantidad de libros importante a veces no sabrá lo que le pueda gustar. Sería una recomendación que con una simple búsqueda en Internet no resuelva, pues si solo has leído dos libros de un género, con una búsqueda podrás encontrar otros ejemplares famosos acordes a la temática que se busca. Pero una vez se han leído tanta cantidad de libros, esas recomendaciones resultarán inútiles, pues esos libros recomendados seguramente ya hayan sido leídos, y se buscará algo nuevo.
 
+### Estado del proyecto
+
+Se han definido las historias de usuario y los milestones.
+
 ### Documentación
 
-- [Enlace a la carpeta](https://github.com/fjgallardo00/Akinah/tree/Objetivo-0/Objetivos)
+- [Enlace a la carpeta](https://github.com/fjgallardo00/Akinah/tree/Objetivo-1/docs)
+
