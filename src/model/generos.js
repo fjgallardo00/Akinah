@@ -1,3 +1,7 @@
+/*
+ * Objeto Generos
+ * Representa un conjunto de géneros para realizar clasificaciones
+ */
 const Generos = Object.freeze({
    Ficcion: Symbol("ficcion"),
    Romantico: Symbol("romantico"),
@@ -11,3 +15,4 @@ const Generos = Object.freeze({
    Internacional: Symbol("internacional"),
    Otros: Symbol("otros")
 })
+
