@@ -1,5 +1,4 @@
 "use strict"
-import {Libro} from "./libro.js";
 
 /**
  * @class PuntuacionLibro representa una pareja que
