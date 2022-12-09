@@ -1,18 +1,15 @@
-/*
- * Objeto Generos
- * Representa un conjunto de géneros para realizar clasificaciones
- */
-const Generos = Object.freeze({
-   Ficcion: Symbol("ficcion"),
-   Romantico: Symbol("romantico"),
-   Terror: Symbol("terror"),
-   Adolescente: Symbol("adolescente"),
-   Historia: Symbol("historia"),
-   Adultos: Symbol("adultos"),
-   Dramatico: Symbol("dramatico"),
-   Lirica: Symbol("lirica"),
-   Didactico: Symbol("didactico"),
-   Internacional: Symbol("internacional"),
-   Otros: Symbol("otros")
-})
+"use strict"
 
+
+/** Representa un conjunto de géneros */ 
+export const generos = new Set(
+   [
+      'ficcion', 'romantico', 'terror', 'adolescente', 'adultos', 'infantil',
+      'dramatico', 'comedia', 'historia', 'misterio', 'animales', 'didactico',
+      'cultura', 'otros'
+   ]
+)
+
+
+/** Gustos del usuario: será un subconjunto de generos */
+export const gustos = new Set()
