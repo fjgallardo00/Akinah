@@ -1,6 +1,3 @@
-"use strict"
-
-
 /** Representa un conjunto de géneros */ 
 export const generos = new Set(
    [

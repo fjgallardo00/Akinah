@@ -1,5 +1,3 @@
-"use strict"
-
 /**
  * @class PuntuacionLibro representa una pareja que
  * asocia un identificador de un libro a un valor numérico

@@ -1,5 +1,3 @@
-"use strict"
-
 /**
  * @class Libro Representa un libro
  * Asocia un identificador de un libro con los géneros que lo clasifican
