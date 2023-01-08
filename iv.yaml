@@ -1,2 +1,2 @@
 lenguaje: node.js
-entidad: 
+entidad: [src/model/generos.js, src/model/usuario.js]
