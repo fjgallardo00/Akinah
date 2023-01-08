@@ -1,26 +1,56 @@
+import {ConjuntoGeneros} from "./generos.js"
+
 /**
  * @class Libro Representa un libro
- * Asocia un identificador de un libro con los géneros que lo clasifican
+ * Encapsula la información del título, autor, idioma, descripción y gérenos
+ * que definen a un libro
  */
 export class Libro{
-   #id
+   #titulo
+   #autor
+   #idioma
+   #descripcion
    #generos
 
    /**
     * @constructor
-    * @param {string} id - Identificador del libro
+    * @param {string} titulo - Titulo del libro
+    * @param {string} autor - Autor del libro
+    * @param {string} idioma - Idioma en el que se haya escrito el libro
+    * @param {string} descripcion - Descripción del libro
     * @param {Set} generos - Géneros asociados al libro
     */
-   constructor(id, generos){
-      this.#id = id
-      this.#generos = generos
+   constructor(titulo, autor, idioma, descripcion, generos){
+      this.#titulo = titulo
+      this.#autor = autor
+      this.#idioma = idioma
+      this.#descripcion = descripcion
+      this.#generos = new ConjuntoGeneros(generos)
    }
 
-   get id(){
-      return this.#id
+   get titulo(){
+      return this.#titulo
    }
 
+
+   get autor(){
+      return this.#autor
+   }
+
+
+   get idioma(){
+      return this.#idioma
+   }
+
+
+   get descripcion(){
+      return this.#descripcion
+   }
+
+   /**
+    * Devuelve el conjunto (Set) de géneros asociados al libro
+    */
    get generos(){
-      return this.#generos
+      return this.#generos.generos // getter de ConjuntoGeneros
    }
 }
