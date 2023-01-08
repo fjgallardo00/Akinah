@@ -16,13 +16,13 @@ export class Libro{
     * @param {string} titulo - Titulo del libro
     * @param {string} autor - Autor del libro
     * @param {string} descripcion - Descripción del libro
-    * @param {Set} generos - Géneros asociados al libro
+    * @param {ConjuntoGeneros} generos - Géneros asociados al libro
     */
    constructor(titulo, autor, descripcion, generos){
       this.#titulo = titulo
       this.#autor = autor
       this.#descripcion = descripcion
-      this.#generos = new ConjuntoGeneros(generos)
+      this.#generos = generos
    }
 
    get titulo(){

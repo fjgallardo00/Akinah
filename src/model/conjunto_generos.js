@@ -37,16 +37,25 @@ export class ConjuntoGeneros{
     */
    constructor(conjunto){
       this.#generos = new Set()
-      this.generos = conjunto // usamos el setter
+      this.#setGeneros(conjunto)
    }
 
+   /**
+    * Devuelve el conjunto de géneros
+    */
+   get generos(){
+      return this.#generos
+   }
+
+
+   // MÉTODOS PRIVADOS
    /**
     * Asigna un nuevo conjunto a los géneros
     * @param {Set} conjunto - Conjunto de géneros. Solo se añadirán
     * los valores que se encuentren en @see GENEROS
     * @post Los géneros serán un subconjunto de @see GENEROS
     */
-   set generos(conjunto){
+   #setGeneros(conjunto){
       this.#generos.clear()
 
       // Asegura que los géneros sean un subconjunto de GENEROS
@@ -57,10 +66,4 @@ export class ConjuntoGeneros{
       }
    }
 
-   /**
-    * Devuelve el conjunto de géneros
-    */
-   get generos(){
-      return this.#generos
-   }
 }

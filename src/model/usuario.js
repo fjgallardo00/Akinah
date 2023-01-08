@@ -3,7 +3,7 @@ import {ConjuntoGeneros} from "./generos.js"
 
 /**
  * @class Usuario
- * Asocia a un usuario con sus gustos
+ * Asocia a un usuario con sus gustos (sobre géneros de los libros)
  */
 export class Usuario{
    #gustos
@@ -11,20 +11,23 @@ export class Usuario{
    /**
     * @constructor
     * Crea un usuario que tiene gustos referidos a géneros
-    * @param {Set} gustos - Conjunto de gustos. Estos son valores string que representan
-    * un género cada uno. Solo se añadirán los géneros que pertenezcan a la clase
-    * @see ConjuntoGeneros
+    * @param {ConjuntoGeneros} gustos - Conjunto de gustos
     */
    constructor(gustos){
-      this.#gustos = new ConjuntoGeneros(gustos)
+      this.#gustos = gustos
    }
 
    
    /**
-    * @returns {ConjuntoGeneros} Devuelve un objeto que es un conjunto de géneros
+    * @returns {Set} Devuelve un set que es el conjunto de gustos/géneros del usuario
     */
    get gustos(){
-      return this.#gustos
+      return this.#gustos.generos
+   }
+
+
+   set gustos(nuevosGustos){
+      this.#gustos = nuevosGustos
    }
 
 }
