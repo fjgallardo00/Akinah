@@ -37,7 +37,12 @@ export class ConjuntoGeneros{
     */
    constructor(conjunto){
       this.#generos = new Set()
-      this.#setGeneros(conjunto)
+      // Asegura que los géneros sean un subconjunto de GENEROS
+      for (let gen of conjunto){
+         if (ConjuntoGeneros.#GENEROS.has(gen)){
+            this.#generos.add(gen)
+         }
+      }
    }
 
    /**
@@ -45,25 +50,6 @@ export class ConjuntoGeneros{
     */
    get generos(){
       return this.#generos
-   }
-
-
-   // MÉTODOS PRIVADOS
-   /**
-    * Asigna un nuevo conjunto a los géneros
-    * @param {Set} conjunto - Conjunto de géneros. Solo se añadirán
-    * los valores que se encuentren en @see GENEROS
-    * @post Los géneros serán un subconjunto de @see GENEROS
-    */
-   #setGeneros(conjunto){
-      this.#generos.clear()
-
-      // Asegura que los géneros sean un subconjunto de GENEROS
-      for (let gen of conjunto){
-         if (ConjuntoGeneros.#GENEROS.has(gen)){
-            this.#generos.add(gen)
-         }
-      }
    }
 
 }
