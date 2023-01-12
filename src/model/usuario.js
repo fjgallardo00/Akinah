@@ -1,4 +1,4 @@
-import {ConjuntoGeneros} from "./generos.js"
+import {ConjuntoGeneros} from "./conjunto_generos.js"
 
 
 /**
@@ -26,6 +26,10 @@ export class Usuario{
    }
 
 
+   /**
+    * Cambia los gustos del usuario
+    * @param {ConjuntoGeneros} nuevosGustos
+    */
    set gustos(nuevosGustos){
       this.#gustos = nuevosGustos
    }
