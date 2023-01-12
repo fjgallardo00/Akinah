@@ -2,26 +2,23 @@ import {ConjuntoGeneros} from "./generos.js"
 
 /**
  * @class Libro Representa un libro
- * Encapsula la información del título, autor, descripción y gérenos
+ * Encapsula la información del título, autor y gérenos
  * que definen a un libro
  */
 export class Libro{
    #titulo
    #autor
-   #descripcion
    #generos
 
    /**
     * @constructor
     * @param {string} titulo - Titulo del libro
     * @param {string} autor - Autor del libro
-    * @param {string} descripcion - Descripción del libro
     * @param {ConjuntoGeneros} generos - Géneros asociados al libro
     */
-   constructor(titulo, autor, descripcion, generos){
+   constructor(titulo, autor, generos){
       this.#titulo = titulo
       this.#autor = autor
-      this.#descripcion = descripcion
       this.#generos = generos
    }
 
@@ -35,12 +32,9 @@ export class Libro{
    }
 
 
-   get descripcion(){
-      return this.#descripcion
-   }
-
    /**
-    * Devuelve el conjunto (Set) de géneros asociados al libro
+    * @returns {Set} - Devuelve el conjunto de géneros asociados al libro.
+    * Los valores del conjunto son strings
     */
    get generos(){
       return this.#generos.generos // getter de ConjuntoGeneros
