@@ -3,23 +3,20 @@
  * @class ConjuntoGeneros
  */
 export class ConjuntoGeneros{
-   /**
-    * Atributo de clase
-    * Conjunto de géneros general
-    */
-   static #GENEROS = new Set(
-      [
-         'ficcion', 'romantico', 'terror', 'adolescente', 'adultos', 'infantil',
-         'dramatico', 'comedia', 'historia', 'misterio', 'animales', 'didactico',
-         'cultura', 'otros'
-      ]
-   )
 
    /**
-    * Devuelve una copia del conjunto de géneros @see GENEROS
+    * 
+    * @returns {Set} - Conjunto de géneros global. Los valore del conjunto son
+    * strings
     */
    static get GENEROS(){
-      return new Set(this.#GENEROS)
+      return new Set(
+         [
+            'ficcion', 'romantico', 'terror', 'adolescente', 'adultos', 'infantil',
+            'dramatico', 'comedia', 'historia', 'misterio', 'animales', 'didactico',
+            'cultura', 'otros'
+         ]
+      )
    }
 
    //--------------------------------------------------------------------------
@@ -37,9 +34,10 @@ export class ConjuntoGeneros{
     */
    constructor(conjunto){
       this.#generos = new Set()
+      let GENEROS = ConjuntoGeneros.GENEROS
       // Asegura que los géneros sean un subconjunto de GENEROS
       for (let gen of conjunto){
-         if (ConjuntoGeneros.#GENEROS.has(gen)){
+         if (GENEROS.has(gen)){
             this.#generos.add(gen)
          }
       }
@@ -49,7 +47,7 @@ export class ConjuntoGeneros{
     * Devuelve el conjunto de géneros
     */
    get generos(){
-      return this.#generos
+      return new Set(this.#generos)
    }
 
 }
