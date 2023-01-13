@@ -1,4 +1,3 @@
-import {ConjuntoGeneros} from "./conjunto_generos.js"
 
 /**
  * @class Libro Representa un libro
