@@ -1,5 +1,3 @@
-import {ConjuntoGeneros} from "./conjunto_generos.js"
-
 
 /**
  * @class Usuario
