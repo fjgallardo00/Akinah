@@ -23,13 +23,4 @@ export class Usuario{
       return this.#gustos.generos
    }
 
-
-   /**
-    * Cambia los gustos del usuario
-    * @param {ConjuntoGeneros} nuevosGustos
-    */
-   set gustos(nuevosGustos){
-      this.#gustos = nuevosGustos
-   }
-
 }
